@@ -1,34 +1,15 @@
 #!/usr/bin/python3
-Square = __import__('2-square').Square
+safe_print_list_integers = \
+    __import__('2-safe_print_list_integers').safe_print_list_integers
 
-my_square_1 = Square(3)
-print(type(my_square_1))
-print(my_square_1.__dict__)
+my_list = [1, 2, 3, 4, 5]
 
-my_square_2 = Square()
-print(type(my_square_2))
-print(my_square_2.__dict__)
+nb_print = safe_print_list_integers(my_list, 2)
+print("nb_print: {:d}".format(nb_print))
 
-try:
-    print(my_square_1.size)
-except Exception as e:
-    print(e)
+my_list = [1, 2, 3, "School", 4, 5, [1, 2, 3]]
+nb_print = safe_print_list_integers(my_list, len(my_list))
+print("nb_print: {:d}".format(nb_print))
 
-try:
-    print(my_square_1.__size)
-except Exception as e:
-    print(e)
-
-try:
-    my_square_3 = Square("3")
-    print(type(my_square_3))
-    print(my_square_3.__dict__)
-except Exception as e:
-    print(e)
-
-try:
-    my_square_4 = Square(-89)
-    print(type(my_square_4))
-    print(my_square_4.__dict__)
-except Exception as e:
-    print(e)
+nb_print = safe_print_list_integers(my_list, len(my_list) + 2)
+print("nb_print: {:d}".format(nb_print))
