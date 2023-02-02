@@ -1,1 +1,1 @@
-# Solutions to Python - Everything is object
+# solution to tasks on 0x08. Python - More Classes and Objects
