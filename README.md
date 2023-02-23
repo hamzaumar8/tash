@@ -1,1 +1,1 @@
-# Solution to tasks on Python - Inheritance
+# Solutions to tasks on Python - Input/Output
