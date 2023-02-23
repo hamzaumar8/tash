@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-matrix_mul = __import__('100-matrix_mul').matrix_mul
+MyInt = __import__('100-my_int').MyInt
 
-print(matrix_mul([[1, 2], [3, 4]], [[1, 2], [3, 4]]))
-print(matrix_mul([[1, 2]], [[3, 4], [5, 6]]))
+my_i = MyInt(3)
+print(my_i)
+print(my_i == 3)
+print(my_i != 3)

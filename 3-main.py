@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-say_my_name = __import__('3-say_my_name').say_my_name
+is_kind_of_class = __import__('3-is_kind_of_class').is_kind_of_class
 
-say_my_name("John", "Smith")
-say_my_name("Walter", "White")
-say_my_name("Bob")
-try:
-    say_my_name(12, "White")
-except Exception as e:
-    print(e)
+a = 1
+if is_kind_of_class(a, int):
+    print("{} comes from {}".format(a, int.__name__))
+if is_kind_of_class(a, float):
+    print("{} comes from {}".format(a, float.__name__))
+if is_kind_of_class(a, object):
+    print("{} comes from {}".format(a, object.__name__))
