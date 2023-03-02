@@ -1,1 +1,1 @@
-# Solutions to tasks on Processes and signals
+# Solution to tasks on Loops, conditions and parsing
