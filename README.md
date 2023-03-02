@@ -1,1 +1,1 @@
-# Solutions to the command line challenge
+# Solutions to tasks on Processes and signals
